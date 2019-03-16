@@ -5,12 +5,16 @@
         <div class="panel-heading text-center">
           <img src="<%= @item.image_url %>" alt="">
         </div>
+
         <div class="panel-body">
           <p class="item-title"><%= @item.name %></p>
+          
           <div class="buttons text-center">
             <%= render 'ownerships/want_button', item: @item %>
+            <%= render 'ownerships/have_button', item: @item %>
           </div>
         </div>
+        
       </div>
     </div>
   </div>
